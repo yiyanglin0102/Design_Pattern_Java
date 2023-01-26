@@ -4,12 +4,11 @@ public class Mode {
 
     public String mode;
 
-    Mode(String mode)
-    {
-        this.mode = mode;
+    Mode(String beverage) {
+        this.mode = beverage;
     }
 
-    public String getMode(){
+    public String getMode() {
         return mode;
     }
 
