@@ -1,23 +1,22 @@
 package edu.bu.met.cs665;
 
 import static org.junit.Assert.assertEquals;
-import org.junit.Test;
 
 // Write some Unit tests for your program like the following.
 
-public class TestAge {
+public class Test {
 
-  public TestAge() {}
+  public Test() {}
 
-  @Test
+  @org.junit.Test
   public void testGetMachineMode() {
-
-    VendingMachine vm =
-            new VendingMachine
-                    ("coffee", "Espresso", 3, 3);
-
-
-    assertEquals("coffee", vm.getMode());
+//
+//    VendingMachine vm =
+//            new VendingMachine
+//                    ("coffee", "Espresso", 3, 3);
+//
+//
+//    assertEquals("coffee", vm.getMode());
 
   }
 

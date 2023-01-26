@@ -2,14 +2,24 @@ package edu.bu.met.cs665;
 
 public class Main {
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
 
         VendingMachine vm =
                 new VendingMachine
-                        ("coffee", "Espresso", 3, 3);
+                        ("coffee", 1, 2);
 
-        System.out.println(vm.getMode());
+        VendingMachine vm1 =
+                new VendingMachine
+                        ("coffee");
+
+        vm.getMode().addMilk();
+        vm.getMode().addMilk();
+        vm.getMode().addMilk();
+//        vm.getMode().addMilk();
+        vm.getMode().makeEspresso();
+
+        System.out.println(vm.getMode().getMilk());
+
     }
 
 }
