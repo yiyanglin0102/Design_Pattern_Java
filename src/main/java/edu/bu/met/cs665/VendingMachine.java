@@ -3,7 +3,6 @@ package edu.bu.met.cs665;
 public class VendingMachine {
     public Mode mode;
 
-
     VendingMachine(String beverage, String favor, int milk, int sugar) {
         if (beverage == "coffee") {
             mode = new CoffeeMode(favor, milk, sugar);
@@ -12,7 +11,6 @@ public class VendingMachine {
         if (beverage == "tea") {
             mode = new TeaMode(favor, milk, sugar);
         }
-
     }
 
     VendingMachine(String beverage, String favor) {
