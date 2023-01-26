@@ -1,7 +1,6 @@
-# Project Template
+# Project Name
 
-This is a Java Maven Project Template
-
+Fully Automatic Beverage Vending Machine
 
 # How to compile the project
 
