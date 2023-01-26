@@ -1,38 +1,47 @@
 package edu.bu.met.cs665;
 
 public class TeaMode extends Mode {
-    public String favor;
-    public int milk;
-    public int sugar;
 
-    TeaMode(String favor) {
-        super("Tea");
-        this.favor = favor;
+    TeaMode() {
+        super("tea");
         this.milk = 0;
         this.sugar = 0;
     }
 
-    TeaMode(String favor, int milk, int sugar) {
-        super("Tea");
-        this.favor = favor;
+    TeaMode(int milk, int sugar) {
+        super("tea");
         this.milk = milk;
         this.sugar = sugar;
     }
 
     public void makeBlackTea() {
-        System.out.println("You got Black Tea! with milk :" + this.milk
+        this.favor = "Black Tea";
+
+        System.out.println("You got " + this.favor + "! with milk :" + this.milk
                 + " sugar :" + this.sugar);
+
+        this.milk = 0;
+        this.sugar = 0;
     }
 
     public void makeGreenTea() {
-        System.out.println("You got Green Tea! with milk :" + this.milk
+        this.favor = "Green Tea";
+
+        System.out.println("You got " + this.favor + "! with milk :" + this.milk
                 + " sugar :" + this.sugar);
+
+        this.milk = 0;
+        this.sugar = 0;
     }
 
     public void makeYellowTea() {
-        System.out.println("You got Yellow Tea! with milk :" + this.milk
-                + " sugar :" + this.sugar);
-    }
+        this.favor = "Yellow Tea";
 
+        System.out.println("You got " + this.favor + "! with milk :" + this.milk
+                + " sugar :" + this.sugar);
+
+        this.milk = 0;
+        this.sugar = 0;
+    }
 
 }

@@ -10,15 +10,15 @@ public class Main {
 
         VendingMachine vm1 =
                 new VendingMachine
-                        ("coffee");
+                        ("tea");
 
-        vm.getMode().addMilk();
-        vm.getMode().addMilk();
-        vm.getMode().addMilk();
+        vm1.getMode().addMilk();
+        vm1.getMode().addMilk();
+//        vm1.getMode().addMilk();
 //        vm.getMode().addMilk();
-        vm.getMode().makeEspresso();
+//        vm1.getMode().makeGreenTea();
 
-        System.out.println(vm.getMode().getMilk());
+        System.out.println(vm1.getMode().getMilk());
 
     }
 

@@ -2,10 +2,10 @@ package edu.bu.met.cs665;
 
 public class Mode {
 
-    public String mode;
-    public String favor;
-    public int milk;
-    public int sugar;
+    String mode;
+    String favor;
+    int milk;
+    int sugar;
 
     Mode(String beverage) {
         this.mode = beverage;
@@ -13,20 +13,22 @@ public class Mode {
         this.sugar = 0;
     }
 
-    public String getMode() {
-        return mode;
+    public void addMilk() {
+        this.milk += 1;
+        if (this.milk > 3) {
+            this.milk = 3;
+        }
     }
 
-    public void addMilk() {
-
+    public void addSugar() {
+        this.sugar += 1;
+        if (this.sugar > 3) {
+            this.sugar = 3;
+        }
     }
 
     public int getMilk() {
         return this.milk;
-    }
-
-    public void addSugar() {
-
     }
 
     public int getSugar() {
@@ -40,5 +42,17 @@ public class Mode {
     }
 
     public void makeLatteMacchiato() {
+    }
+
+    public void makeBlackTea() {
+
+    }
+
+    public void makeGreenTea() {
+
+    }
+
+    public void makeYellowTea() {
+
     }
 }

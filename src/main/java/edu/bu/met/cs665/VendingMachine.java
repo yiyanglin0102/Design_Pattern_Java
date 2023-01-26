@@ -8,9 +8,9 @@ public class VendingMachine {
             mode = new CoffeeMode();
         }
 
-//        if (beverage == "tea") {
-//            mode = new TeaMode(favor, milk, sugar);
-//        }
+        if (beverage == "tea") {
+            mode = new TeaMode();
+        }
     }
 
     VendingMachine(String beverage, int milk, int sugar) {
@@ -18,9 +18,9 @@ public class VendingMachine {
             mode = new CoffeeMode(milk, sugar);
         }
 
-//        if (beverage == "tea") {
-//            mode = new TeaMode(favor, milk, sugar);
-//        }
+        if (beverage == "tea") {
+            mode = new TeaMode(milk, sugar);
+        }
     }
 
 
@@ -28,8 +28,4 @@ public class VendingMachine {
         return mode;
     }
 
-//    @Override
-//    public String toString() {
-//        return mode.getMode() + " " + favor + " " + milk + " " + sugar;
-//    }
 }
