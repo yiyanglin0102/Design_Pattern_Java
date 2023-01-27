@@ -6,7 +6,7 @@
     <artifactId>Assignment1</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>Assignment 1</name>
+    <name>Assignment-1</name>
     <url>https://maven.apache.org</url>
 
     <properties>
@@ -127,7 +127,7 @@
                     <includeProjectDependencies>true</includeProjectDependencies>
                     <includePluginDependencies>true</includePluginDependencies>
                     <killAfter>-1</killAfter>
-                    <mainClass>edu.utexas.cs.cs378.Main</mainClass>
+                    <mainClass>edu.bu.met.cs665.Main</mainClass>
                     <cleanupDaemonThreads>false</cleanupDaemonThreads>
                 </configuration>
             </plugin>

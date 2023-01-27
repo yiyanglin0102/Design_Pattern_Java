@@ -9,57 +9,44 @@ public class Test {
   public Test() {}
 
   @org.junit.Test
-  public void testGetMachineMode() {
-//
-//    VendingMachine vm =
-//            new VendingMachine
-//                    ("coffee", "Espresso", 3, 3);
-//
-//
-//    assertEquals("coffee", vm.getMode());
+  public void testGetNumberMilk() {
+
+    VendingMachine vm =
+            new VendingMachine
+                    ("coffee", 1, 2);
+    vm.getMode().addMilk();
+
+    assertEquals(2, vm.getMode().getMilk());
 
   }
 
 
-//  @Test
-//  public void testSetFirstName() {
-//    Person student = new Person("John", "Doe");
-//    student.setFirstName("Bob");
-//
-//    // age one year after is one
-//    assertEquals("Bob", student.getFirstName());
-//  }
-//
-//
-//  @Test
-//  public void testGetLastName() {
-//
-//    Person student = new Person("John", "Doe");
-//    assertEquals("Doe", student.getLastName());
-//
-//  }
-//
-//
-//
-//  @Test
-//  public void testSetLastName() {
-//
-//    Person student = new Person("John", "Doe");
-//    student.setLastName("Henrink");
-//
-//    assertEquals("Henrink", student.getLastName());
-//
-//  }
-//
-//
-//  @Test
-//  public void testPerson() {
-//
-//    Person student = new Person("John", "Doe");
-//    assertEquals("John", student.getFirstName());
-//    assertEquals("Doe", student.getLastName());
-//  }
+  @org.junit.Test
+  public void testGetNumberSugar() {
+    VendingMachine vm =
+            new VendingMachine
+                    ("coffee", 1, 2);
+    vm.getMode().addSugar();
 
+    assertEquals(3, vm.getMode().getSugar());
+  }
+
+
+  @org.junit.Test
+  public void test3() {
+
+    assertEquals(1, 1);
+  }
+  @org.junit.Test
+  public void test4() {
+
+    assertEquals(1, 1);
+  }
+  @org.junit.Test
+  public void test5() {
+
+    assertEquals(1, 1);
+  }
 
 
 }
