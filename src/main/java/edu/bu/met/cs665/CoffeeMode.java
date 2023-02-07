@@ -14,31 +14,43 @@ public class CoffeeMode extends Mode {
         this.sugar = sugar;
     }
 
-    public void makeEspresso() {
+    public String makeEspresso() {
         this.favor = "Espresso";
 
-        System.out.println("You got " + this.favor + "! with milk :" + this.milk
-                + " sugar :" + this.sugar);
+        int tempMilk = this.milk;
+        int tempSugar = this.sugar;
+
         this.milk = 0;
         this.sugar = 0;
+
+        return "You got " + this.favor + "! with milk :" + tempMilk
+                + " sugar :" + tempSugar;
     }
 
-    public void makeAmericano() {
+    public String makeAmericano() {
         this.favor = "Americano";
 
-        System.out.println("You got " + this.favor + "! with milk :" + this.milk
-                + " sugar :" + this.sugar);
+        int tempMilk = this.milk;
+        int tempSugar = this.sugar;
+
         this.milk = 0;
         this.sugar = 0;
+
+        return "You got " + this.favor + "! with milk :" + tempMilk
+                + " sugar :" + tempSugar;
     }
 
-    public void makeLatteMacchiato() {
+    public String makeLatteMacchiato() {
         this.favor = "Latte Macchiato";
 
-        System.out.println("You got " + this.favor + "! with milk :" + this.milk
-                + " sugar :" + this.sugar);
+        int tempMilk = this.milk;
+        int tempSugar = this.sugar;
+
         this.milk = 0;
         this.sugar = 0;
+
+        return "You got " + this.favor + "! with milk :" + tempMilk
+                + " sugar :" + tempSugar;
     }
 
 }

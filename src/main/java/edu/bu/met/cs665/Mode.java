@@ -35,24 +35,27 @@ public class Mode {
         return this.sugar;
     }
 
-    public void makeEspresso() {
+    public String makeEspresso() {
+        return "";
     }
 
-    public void makeAmericano() {
+    public String makeAmericano() {
+        return "";
     }
 
-    public void makeLatteMacchiato() {
+    public String makeLatteMacchiato() {
+        return "";
     }
 
-    public void makeBlackTea() {
-
+    public String makeBlackTea() {
+        return "";
     }
 
-    public void makeGreenTea() {
-
+    public String makeGreenTea() {
+        return "";
     }
 
-    public void makeYellowTea() {
-
+    public String makeYellowTea() {
+        return "";
     }
 }

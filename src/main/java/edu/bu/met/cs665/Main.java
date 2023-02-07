@@ -18,7 +18,7 @@ public class Main {
 //        vm.getMode().addMilk();
 //        vm1.getMode().makeGreenTea();
 
-        System.out.println(vm1.getMode().getMilk());
+        System.out.println(vm1.getMode().makeBlackTea());
 
     }
 

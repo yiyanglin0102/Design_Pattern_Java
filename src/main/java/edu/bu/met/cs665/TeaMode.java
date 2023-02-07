@@ -14,34 +14,45 @@ public class TeaMode extends Mode {
         this.sugar = sugar;
     }
 
-    public void makeBlackTea() {
+    public String makeBlackTea() {
         this.favor = "Black Tea";
 
-        System.out.println("You got " + this.favor + "! with milk :" + this.milk
-                + " sugar :" + this.sugar);
+        int tempMilk = this.milk;
+        int tempSugar = this.sugar;
 
         this.milk = 0;
         this.sugar = 0;
+
+        return "You got " + this.favor + "! with milk :" + tempMilk
+                + " sugar :" + tempSugar;
     }
 
-    public void makeGreenTea() {
+    public String makeGreenTea() {
         this.favor = "Green Tea";
 
-        System.out.println("You got " + this.favor + "! with milk :" + this.milk
-                + " sugar :" + this.sugar);
+        int tempMilk = this.milk;
+        int tempSugar = this.sugar;
 
         this.milk = 0;
         this.sugar = 0;
+
+        return "You got " + this.favor + "! with milk :" + tempMilk
+                + " sugar :" + tempSugar;
     }
 
-    public void makeYellowTea() {
+    public String makeYellowTea() {
         this.favor = "Yellow Tea";
 
-        System.out.println("You got " + this.favor + "! with milk :" + this.milk
-                + " sugar :" + this.sugar);
+        int tempMilk = this.milk;
+        int tempSugar = this.sugar;
 
         this.milk = 0;
         this.sugar = 0;
+
+        return "You got " + this.favor + "! with milk :" + tempMilk
+                + " sugar :" + tempSugar;
+
+
     }
 
 }
