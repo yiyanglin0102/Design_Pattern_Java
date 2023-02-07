@@ -2,6 +2,37 @@
 
 Fully Automatic Beverage Vending Machine
 
+## Project Structure
+
+```
+./src
+├── /main
+│   ├── Main.java
+│   ├── VendingMachine.java
+│   ├── Mode.java
+│   ├── TeaMode.java
+│   └── CoffeeMode.java
+│
+└── /test
+    └── Test.java
+```
+
+The workspace is structured in following:
+
+- `/src` : a folder to maintain source codes.
+    - `main` : a folder to mainly implement project solution.
+        - `Main` : used to create VendingMachine object with inputting amount of milk and sugar, finally, make a kind of beverage of coffee or tea.
+        - `VendingMachine` : provides two modes, coffee or tea.
+        - `Mode` : in the `Mode` object, it stores instance variables and instance methods to its child classes to be overridden.
+        - `TeaMode` : `makeBlackTea`, `makeGreenTea`, `makeYellowTea` are the three functions that will return String message after creating beverage, and after that, the milk and sugar will be consumed to 0. 
+        - `CoffeeMode` : `makeEspresso`, `makeAmericano`, `makeLatteMacchiato` are the three functions that will return String message after creating beverage, and after that, the milk and sugar will be consumed to 0.
+    - `test` : a folder to maintain testcases.
+      - `Test` : created 5 testcases to assert the inputs and outputs.
+
+## Diagram
+
+![Diagram](./Diagram.png)
+
 # How to compile the project
 
 We use Apache Maven to compile and run this project. 

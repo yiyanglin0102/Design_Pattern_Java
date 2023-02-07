@@ -51,8 +51,6 @@ public class TeaMode extends Mode {
 
         return "You got " + this.favor + "! with milk :" + tempMilk
                 + " sugar :" + tempSugar;
-
-
     }
 
 }
