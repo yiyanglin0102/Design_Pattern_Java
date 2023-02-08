@@ -2,7 +2,7 @@
 
 Fully Automatic Beverage Vending Machine
 
-## Project Structure
+# Project Structure
 
 ```
 ./src
@@ -29,7 +29,7 @@ The workspace is structured in following:
     - `test` : a folder to maintain testcases.
       - `Test` : created 5 testcases to assert the inputs and outputs.
 
-## Diagram
+# Diagram
 
 ![Diagram](./Diagram.png)
 
@@ -127,7 +127,3 @@ mvn checkstyle:checkstyle
 ```bash
 target/site/checkstyle.html
 ```
-
-
-
-
